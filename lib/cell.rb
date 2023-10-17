@@ -1,3 +1,6 @@
+# frozen_string_literal: true
+
+# Cell
 class Cell
   attr_reader :mark
 
@@ -6,7 +9,7 @@ class Cell
   end
 
   def set(mark)
-    if (@mark == '-')
+    if @mark == '-'
       @mark = mark
       true
     else
@@ -19,6 +22,6 @@ class Cell
   end
 
   def to_s
-    "#{mark}"
+    mark.to_s
   end
 end

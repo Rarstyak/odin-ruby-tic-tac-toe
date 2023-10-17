@@ -1,7 +1,8 @@
+# frozen_string_literal: true
+
 require_relative '../lib/cell'
 
 describe Cell do
-
   subject(:default_cell) { described_class.new }
 
   describe '#initialize' do
